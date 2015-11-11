@@ -1,6 +1,11 @@
 # apkDecompiler
 
 根据自己习惯从https://github.com/luckyandyzhang/easy-android-decompiler 修改过来的版本 
+
+```
+python decompile.py apk/test.apk
+```
+
 ### 感谢
 [http://sourceforge.net/projects/dex2jar/](http://sourceforge.net/projects/dex2jar/)
 
