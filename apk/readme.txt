@@ -1,0 +1,1 @@
+python decompile.py test.apk
