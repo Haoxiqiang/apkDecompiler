@@ -7,9 +7,12 @@ import sys
 #确定反编译的输出目录，默认是当前apk所属目录
 def get_output_folder():
 	if not len(os.path.dirname(_source_apk_path)) == 0:
-		return os.path.dirname(_source_apk_path) + '/'
+		out_path = os.path.dirname(_source_apk_path) + '/'
 	else:
-		return os.path.dirname(_source_apk_path)
+		out_path = os.path.dirname(_source_apk_path)
+
+	return out_path+"decompile/"
+
 
 #获取要反编译的apk路径
 def get_input_apk_path():
@@ -64,13 +67,22 @@ _running_path = os.path.split(os.path.realpath(sys.argv[0]))[0]
 
 #初始化相关变量
 _source_apk_path = get_input_apk_path()
-_output_folder = get_output_folder()
 _apk_basename = os.path.basename(_source_apk_path).strip()
 _apk_basename_without_ext = os.path.splitext(_apk_basename)[0]
-_apk_jar = '%s-dex2jar.jar' % (_output_folder + _apk_basename_without_ext)
-_apk_classes_folder = '%s_classes' % (_output_folder + _apk_basename_without_ext)
-_apk_source_code_folder = '%s_source_code' % (_output_folder + _apk_basename_without_ext)
-_apk_resource_folder = '%s_resource' % (_output_folder + _apk_basename_without_ext)
+_output_folder = get_output_folder()
+
+_apk_resource = 'apk'
+_apk_jar = '%s-dex2jar.jar' % (_output_folder + _apk_resource)
+_apk_classes_folder = '%s_classes' % (_output_folder + _apk_resource)
+_apk_source_code_folder = '%s_source_code' % (_output_folder + _apk_resource)
+_apk_resource_folder = '%s_resource' % (_output_folder + _apk_resource)
+
+# print _source_apk_path
+# print _output_folder
+# print _apk_basename
+# print _apk_jar
+# print _apk_classes_folder
+# print _apk_resource_folder
 
 process_user_choice()
 
