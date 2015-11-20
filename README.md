@@ -1,6 +1,7 @@
 # apkDecompiler
 
-根据自己习惯从https://github.com/luckyandyzhang/easy-android-decompiler 修改过来的版本 
+根据自己习惯从https://github.com/luckyandyzhang/easy-android-decompiler 修改过来的版本
+只测试了mac OS X
 
 ```
 python decompile.py apk/test.apk
