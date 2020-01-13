@@ -26,3 +26,6 @@ tar zxf ./dex-tools/build/distributions/dex-tools-*.zip
 rm ./dex-tools/build/distributions/dex-tools-*.zip
 mv ./dex-tools-* ../dex-tools
 cd ..
+
+sys=`uname -s`
+ln -s ./jad-tools/${sys}/jad jad

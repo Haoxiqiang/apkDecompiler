@@ -28,7 +28,7 @@ def process_user_choice():
 	get_resource()
 	print 'Extracting resource success'
 	print '\nGet resource and smali code from apk'
-	convert_apk_to_jar()
+	#convert_apk_to_jar()
 	print 'Convert to jar success'
 	print 'Extracting classes from jar...'
 	extract_classes_from_jar()

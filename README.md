@@ -1,9 +1,12 @@
 # apkDecompiler
 
 根据自己习惯从https://github.com/luckyandyzhang/easy-android-decompiler 修改过来的版本
-只测试了mac OS X
+只测试了mac OS X(其他系统需要自己更新jad)
 
 ```
+#首次自己重新编译一次dex2jar
+./init_dev_env.sh
+
 python decompile.py apk/test.apk
 ```
 
