@@ -41,12 +41,12 @@ def process_user_choice():
 #获取资源文件
 def get_resource():
 	print '\nGetting resource...\n'
-	os.system('java -jar %s/apktool_2.1.1.jar d -f -o %s %s' % (_running_path, _apk_resource_folder, _source_apk_path))
+	os.system('java -jar %s/apktool_2.4.1.jar d -f -o %s %s' % (_running_path, _apk_resource_folder, _source_apk_path))
 
 #将apk转化为jar
 def convert_apk_to_jar():
 	print 'Converting apk to jar...'
-	os.system('sh %s/dex2jar-2.0/d2j-dex2jar.sh -f -o %s %s' % (_running_path, _apk_jar, _source_apk_path))
+	os.system('sh %s/dex-tools/d2j-dex2jar.sh -f -o %s %s' % (_running_path, _apk_jar, _source_apk_path))
 
 #将class文件从jar包中解压出来
 def extract_classes_from_jar():
