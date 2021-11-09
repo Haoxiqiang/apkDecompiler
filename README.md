@@ -1,7 +1,7 @@
 # apkDecompiler
 
-根据自己习惯从https://github.com/luckyandyzhang/easy-android-decompiler 修改过来的版本
-只测试了mac OS X(其他系统需要自己更新jad)
+fork from https://github.com/luckyandyzhang/easy-android-decompiler 
+just test mac os
 
 ```
 #首次自己重新编译一次dex2jar
@@ -10,7 +10,7 @@
 python decompile.py apk/test.apk
 ```
 
-### 感谢
+### Deps
 [http://sourceforge.net/projects/dex2jar/](http://sourceforge.net/projects/dex2jar/)
 
 [http://ibotpeaches.github.io/Apktool/](http://ibotpeaches.github.io/Apktool/)
@@ -22,7 +22,7 @@ License
 
 The MIT License (MIT)
 
-Copyright (c) 2015 haoxiqiang
+Copyright (c) 2021 haoxiqiang
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

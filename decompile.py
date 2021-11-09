@@ -41,7 +41,7 @@ def process_user_choice():
 #获取资源文件
 def get_resource():
 	print '\nGetting resource...\n'
-	os.system('java -jar %s/apktool_2.4.1.jar d -f -o %s %s' % (_running_path, _apk_resource_folder, _source_apk_path))
+	os.system('java -jar %s/apktool_2.6.0.jar d -f -o %s %s' % (_running_path, _apk_resource_folder, _source_apk_path))
 
 #将apk转化为jar
 def convert_apk_to_jar():

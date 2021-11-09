@@ -17,8 +17,8 @@ distributionBase=GRADLE_USER_HOME
 distributionPath=wrapper/dists
 zipStoreBase=GRADLE_USER_HOME
 zipStorePath=wrapper/dists
-#distributionUrl=https\://services.gradle.org/distributions/gradle-5.6.2-all.zip
-distributionUrl=https\://apk.izuiyou.com/repositories/gradle-5.6.2-all.zip
+distributionUrl=https\://services.gradle.org/distributions/gradle-5.6.2-all.zip
+
 " > ./gradle/wrapper/gradle-wrapper.properties
 ./gradlew clean && ./gradlew distZip
 rm -r ../dex-tools*
