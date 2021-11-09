@@ -1,3 +1,3 @@
 #!/bin/bash
 
-java -jar procyon-decompiler-0.5.36.jar -jar $1 -o $2
+java -jar procyon-decompiler-0.6-prerelease.jar -jar $1 -o $2
