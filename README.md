@@ -4,10 +4,11 @@ fork from https://github.com/luckyandyzhang/easy-android-decompiler
 just test mac os
 
 ```
-#首次自己重新编译一次dex2jar
+# 首次自己重新编译一次dex2jar
 ./init_dev_env.sh
 
 python decompile.py apk/test.apk
+./dejar.sh apk/classes.jar apk/src
 ```
 
 ### Deps
